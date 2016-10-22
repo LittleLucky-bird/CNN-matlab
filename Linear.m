@@ -34,17 +34,22 @@ classdef Linear < Layer
 
         function layer = forward(layer, input)
             % Your codes here
-            % hint: 
-            %     1. reshape input if necessary 
+            % hint:
+            %     1. reshape input if necessary
             %     2. calc y = Wx + b
-
+            layer.input_shape = size(input,2);
+            layer.input = reshape(input,layer.num_input,layer.input_shape);
+            layer.output = layer.W * layer.input + repmat(layer.b,1,layer.input_shape);
         end
 
         function layer = backprop(layer, delta)
             % Your codes here
-            % hint: 
+            % hint:
             %     1. calc grad_W, grad_b and delta for input
-            %     2. reshape delta if necessary
+            %     2. reshape delta if
+            layer.grad_W =   - delta * (layer.input)'/layer.input_shape;
+            layer.grad_b =   - mean(delta,2);
+            layer.delta = (layer.W)' * delta;
 
         end
 
@@ -62,4 +67,3 @@ classdef Linear < Layer
         end
     end
 end
-
