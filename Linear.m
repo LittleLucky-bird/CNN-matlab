@@ -33,15 +33,16 @@ classdef Linear < Layer
         end
 
         function layer = forward(layer, input)
-            layer.input_shape = size(input,2);
-            layer.input = reshape(input,layer.num_input,layer.input_shape);
-            layer.output = layer.W * layer.input + repmat(layer.b,1,layer.input_shape);
+            layer.input_shape = size(input);
+            layer.input = reshape(input,layer.num_input,layer.input_shape(4));
+            layer.output = layer.W * layer.input + repmat(layer.b,1,size(layer.input,2));
         end
 
         function layer = backprop(layer, delta)
-            layer.grad_W =   - delta * (layer.input)'/layer.input_shape;
-            layer.grad_b =   - mean(delta,2);
+            layer.grad_W =   delta * (layer.input)' /layer.input_shape(4);
+            layer.grad_b =   mean(delta,2);
             layer.delta = (layer.W)' * delta;
+            layer.delta = reshape(layer.delta ,layer.input_shape);
         end
 
         function layer = update(layer, config)

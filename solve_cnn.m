@@ -77,12 +77,12 @@ function solve_cnn(model, loss, train_data, train_label, ...
             total_accuracy = [];
         end
 
-        if mod(k, solver.snapshot_freq) == 0
-            params = model.Params();
-            save(['model_weight_iter_' num2str(k) '.mat'], 'params');
-            msg = sprintf('Snapshotting to model_weight_iter_%d.mat', k);
-            LOG_INFO(msg);
-        end
+        % if mod(k, solver.snapshot_freq) == 0
+        %     params = model.Params();
+        %     save(['model_weight_iter_' num2str(k) '.mat'], 'params');
+        %     msg = sprintf('Snapshotting to model_weight_iter_%d.mat', k);
+        %     LOG_INFO(msg);
+        % end
     end
 end
 
@@ -101,5 +101,3 @@ function accuracy = calc_accuracy(output, label)
     [~, label] = max(label);
     accuracy = sum(pred_indx == label) / size(label, 2);
 end
-
-

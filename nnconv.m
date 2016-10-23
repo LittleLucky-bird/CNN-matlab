@@ -8,13 +8,15 @@ function output = nnconv(input, kernel_size, num_output, W, b, pad)
     %     3. don't forget adding bias
     %
     % ps: there are more than one way in step 2, try to find the fastest method
-
-    input = [zeros(1,size(input,1)+2*pad,size(input,3),size(input,4));zeros(size(input,1),1,size(input,3),size(input,4)),input,zeros(size(input,1),1,size(input,3),size(input,4));zeros(1,size(input,1)+2*pad,size(input,3),size(input,4))];
     output = zeros(size(input,1),size(input,1),num_output,size(input,4));
-    for i=1:size(input,4)
+    input = [zeros(pad,size(input,1)+2*pad,size(input,3),size(input,4));zeros(size(input,1),pad,size(input,3),size(input,4)),input,zeros(size(input,1),pad,size(input,3),size(input,4));zeros(pad,size(input,1)+2*pad,size(input,3),size(input,4))];
+
+    for n=1:size(input,4)
       for j=1:num_output
-        output(:,:,1,j) = conv2(input(:,:,1,i),W(:,:,i,j),'valid') + b(j);
+        for i=1:size(input,3)
+          output(:,:,j,n) = conv2(input(:,:,i,n),rot90(W(:,:,i,j),2),'valid') + output(:,:,j,n);
+        end
+        output(:,:,j,n) = output(:,:,j,n) + b(j);
       end
     end
-
 end
