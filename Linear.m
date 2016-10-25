@@ -39,8 +39,8 @@ classdef Linear < Layer
         end
 
         function layer = backprop(layer, delta)
-            layer.grad_W =   delta * (layer.input)' /layer.input_shape(4);
-            layer.grad_b =   mean(delta,2);
+            layer.grad_W =   delta * (layer.input)';
+            layer.grad_b =   sum(delta,2);
             layer.delta = (layer.W)' * delta;
             layer.delta = reshape(layer.delta ,layer.input_shape);
         end

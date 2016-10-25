@@ -5,7 +5,8 @@ function [down_delta, grad_W, grad_b] = nnconv_bp(input, delta, W, b, pad)
     %     Generally speaking, the backpropagation process is also
     %     a convolution process, with input and rotated delta.
     %     Gradient checking can assure you of a correct implementation
-    down_delta = zeros(size(delta,1)+2*pad,size(delta,2)+2*pad,size(delta,3),size(delta,4));
+    input = [zeros(pad,size(input,1)+2*pad,size(input,3),size(input,4));zeros(size(input,1),pad,size(input,3),size(input,4)),input,zeros(size(input,1),pad,size(input,3),size(input,4));zeros(pad,size(input,1)+2*pad,size(input,3),size(input,4))];
+    down_delta = zeros(size(input));
     grad_W = zeros(size(W));
     grad_b = zeros(size(b));
     for n=1:size(delta,4)
@@ -17,6 +18,7 @@ function [down_delta, grad_W, grad_b] = nnconv_bp(input, delta, W, b, pad)
         grad_b(j) = grad_b(j) + sum(sum(delta(:,:,j,n)));
       end
     end
+
     ddelta = zeros(size(delta));
     for n=1:size(delta,4)
       for i=1:size(W,3)
