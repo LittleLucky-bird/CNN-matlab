@@ -1,10 +1,10 @@
 clear
 
 model = Network();
-model.add(Convolution('conv1', 3, 1, 4, 1, 0.01));
+model.add(Convolution('conv1', 5, 1, 4, 2, 0.01));
 model.add(Relu('relu1'));
 model.add(Pooling('pool1', 2, 0));  % output shape: 14 x 14 x 4 x N
-model.add(Convolution('conv2', 3, 4, 4, 1, 0.01));
+model.add(Convolution('conv2', 5, 4, 4, 2, 0.01));
 model.add(Relu('relu2'));
 model.add(Pooling('pool2', 2, 0)); % output shape: 7 x 7 x 4 x N
 model.add(Linear('fc3', 196, 10, 0.1));
@@ -20,7 +20,7 @@ test_data = mnist.test_data / 255;
 train_label = mnist.train_label;
 test_label = mnist.test_label;
 
-update.learning_rate = 0.001;
+update.learning_rate = 0.1;
 update.weight_decay = 0;
 update.momentum = 0.9;
 
