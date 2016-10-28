@@ -34,7 +34,7 @@ classdef Linear < Layer
 
         function layer = forward(layer, input)
             layer.input_shape = size(input);
-            layer.input = reshape(input,layer.num_input,layer.input_shape(4));
+            layer.input = reshape(input,layer.num_input,layer.input_shape(end));
             layer.output = layer.W * layer.input + repmat(layer.b,1,size(layer.input,2));
         end
 
