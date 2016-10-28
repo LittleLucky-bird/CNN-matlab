@@ -1,0 +1,254 @@
+[Command: matlab -nodesktop -nosplash -r 'try run('/home/tangpeng/Desktop/CNN-matlab/run_cnn.m');while ~isempty(get(0,'Children')); pause(0.5); end; catch ME; disp(ME.message); exit(1); end; exit(0);']
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+要开始，请键入以下项之一: helpwin、helpdesk 或 demo。
+有关产品信息，请访问 www.mathworks.com。
+ 
+	Academic License
+
+[14:42:36.99] Start training...
+[14:43:27.96] Training iter 50, mean loss 220.75194 (batch loss 218.13373), mean acc 0.11958
+[14:44:17.99] Training iter 100, mean loss 158.85899 (batch loss 31.72178), mean acc 0.40802
+[14:45:08.08] Training iter 150, mean loss 116.68479 (batch loss 29.60352), mean acc 0.57174
+[14:45:58.22] Training iter 200, mean loss 92.77511 (batch loss 19.98669), mean acc 0.66151
+[14:46:47.70] Training iter 250, mean loss 77.83871 (batch loss 9.18539), mean acc 0.71821
+[14:47:35.97] Training iter 300, mean loss 67.57222 (batch loss 15.10627), mean acc 0.75708
+[14:48:25.68] Training iter 350, mean loss 59.71233 (batch loss 13.48553), mean acc 0.78586
+[14:49:16.68] Training iter 400, mean loss 53.80628 (batch loss 17.08560), mean acc 0.80799
+[14:50:06.56] Training iter 450, mean loss 49.15790 (batch loss 10.11191), mean acc 0.82532
+[14:50:56.36] Training iter 500, mean loss 45.46712 (batch loss 14.99649), mean acc 0.83904
+[14:50:56.36]     Testing...
+[14:52:02.13]     Testing iter 500, mean loss 9.47449, mean acc 0.96776
+[14:52:50.63] Training iter 550, mean loss 9.77345 (batch loss 18.15936), mean acc 0.96917
+[14:53:39.18] Training iter 600, mean loss 9.47684 (batch loss 5.80451), mean acc 0.97021
+[14:54:28.33] Training iter 650, mean loss 9.69865 (batch loss 17.10410), mean acc 0.96931
+[14:55:16.02] Training iter 700, mean loss 9.38449 (batch loss 7.15728), mean acc 0.96964
+[14:56:01.81] Training iter 750, mean loss 9.47392 (batch loss 10.31730), mean acc 0.96988
+[14:56:46.26] Training iter 800, mean loss 9.27019 (batch loss 10.86446), mean acc 0.97049
+[14:57:30.58] Training iter 850, mean loss 9.08733 (batch loss 11.90316), mean acc 0.97110
+[14:58:14.61] Training iter 900, mean loss 8.97035 (batch loss 7.30173), mean acc 0.97177
+[14:58:59.04] Training iter 950, mean loss 8.72658 (batch loss 3.00774), mean acc 0.97208
+[14:59:44.80] Training iter 1000, mean loss 8.56125 (batch loss 2.90210), mean acc 0.97260
+[14:59:44.80]     Testing...
+[15:00:46.71]     Testing iter 1000, mean loss 6.61781, mean acc 0.97748
+[15:01:30.79] Training iter 1050, mean loss 8.68311 (batch loss 5.75418), mean acc 0.97625
+[15:02:14.96] Training iter 1100, mean loss 8.18788 (batch loss 6.47644), mean acc 0.97771
+[15:02:58.78] Training iter 1150, mean loss 7.76586 (batch loss 8.05375), mean acc 0.97847
+[15:03:42.22] Training iter 1200, mean loss 7.75124 (batch loss 3.68921), mean acc 0.97781
+[15:04:25.21] Training iter 1250, mean loss 7.33738 (batch loss 2.12447), mean acc 0.97842
+[15:05:08.20] Training iter 1300, mean loss 7.19817 (batch loss 3.26480), mean acc 0.97844
+[15:05:51.30] Training iter 1350, mean loss 7.00426 (batch loss 2.46678), mean acc 0.97905
+[15:06:35.09] Training iter 1400, mean loss 6.87195 (batch loss 6.18175), mean acc 0.97938
+[15:07:18.75] Training iter 1450, mean loss 6.75145 (batch loss 9.57291), mean acc 0.97970
+[15:08:02.43] Training iter 1500, mean loss 6.64091 (batch loss 6.51880), mean acc 0.97971
+[15:08:02.43]     Testing...
+[15:09:04.15]     Testing iter 1500, mean loss 6.28858, mean acc 0.97927
+[15:09:47.39] Training iter 1550, mean loss 6.36711 (batch loss 4.91860), mean acc 0.98042
+[15:10:30.60] Training iter 1600, mean loss 6.51515 (batch loss 2.76483), mean acc 0.97958
+[15:11:13.44] Training iter 1650, mean loss 6.72979 (batch loss 9.50480), mean acc 0.97875
+[15:11:56.66] Training iter 1700, mean loss 6.64519 (batch loss 7.96600), mean acc 0.97953
+[15:12:39.85] Training iter 1750, mean loss 6.45540 (batch loss 2.92208), mean acc 0.98013
+[15:13:22.83] Training iter 1800, mean loss 6.29108 (batch loss 16.77062), mean acc 0.98038
+[15:14:05.78] Training iter 1850, mean loss 6.16416 (batch loss 2.61757), mean acc 0.98089
+[15:14:49.04] Training iter 1900, mean loss 5.97691 (batch loss 3.49672), mean acc 0.98138
+[15:15:32.75] Training iter 1950, mean loss 5.91103 (batch loss 2.50701), mean acc 0.98157
+[15:16:16.55] Training iter 2000, mean loss 5.82860 (batch loss 2.45229), mean acc 0.98177
+[15:16:16.55]     Testing...
+[15:17:18.14]     Testing iter 2000, mean loss 4.11972, mean acc 0.98700
+[15:18:01.39] Training iter 2050, mean loss 4.54759 (batch loss 8.83038), mean acc 0.98625
+[15:18:44.97] Training iter 2100, mean loss 4.58292 (batch loss 2.84468), mean acc 0.98615
+[15:19:28.59] Training iter 2150, mean loss 4.74253 (batch loss 2.81993), mean acc 0.98549
+[15:20:11.95] Training iter 2200, mean loss 4.59112 (batch loss 1.64746), mean acc 0.98589
+[15:20:54.58] Training iter 2250, mean loss 4.71391 (batch loss 2.36556), mean acc 0.98479
+[15:21:37.55] Training iter 2300, mean loss 4.78649 (batch loss 6.48251), mean acc 0.98458
+[15:22:20.23] Training iter 2350, mean loss 4.88711 (batch loss 3.54886), mean acc 0.98429
+[15:23:02.83] Training iter 2400, mean loss 4.86773 (batch loss 4.30177), mean acc 0.98440
+[15:23:45.69] Training iter 2450, mean loss 4.88127 (batch loss 2.72865), mean acc 0.98435
+[15:24:28.42] Training iter 2500, mean loss 4.94021 (batch loss 3.15269), mean acc 0.98440
+[15:24:28.42]     Testing...
+[15:25:29.28]     Testing iter 2500, mean loss 4.61908, mean acc 0.98482
+[15:26:11.67] Training iter 2550, mean loss 4.59120 (batch loss 2.15267), mean acc 0.98563
+[15:26:53.98] Training iter 2600, mean loss 3.93031 (batch loss 2.63608), mean acc 0.98719
+[15:27:36.72] Training iter 2650, mean loss 3.76776 (batch loss 3.46960), mean acc 0.98743
+[15:28:19.29] Training iter 2700, mean loss 3.93040 (batch loss 10.42240), mean acc 0.98672
+[15:29:01.44] Training iter 2750, mean loss 4.30891 (batch loss 6.32479), mean acc 0.98562
+[15:29:43.94] Training iter 2800, mean loss 4.28971 (batch loss 3.57287), mean acc 0.98580
+[15:30:26.47] Training iter 2850, mean loss 4.15501 (batch loss 5.23547), mean acc 0.98601
+[15:31:09.27] Training iter 2900, mean loss 4.09113 (batch loss 1.97679), mean acc 0.98635
+[15:31:52.08] Training iter 2950, mean loss 4.19183 (batch loss 2.04977), mean acc 0.98616
+[15:32:34.53] Training iter 3000, mean loss 4.14794 (batch loss 1.48433), mean acc 0.98621
+[15:32:34.53]     Testing...
+[15:33:34.98]     Testing iter 3000, mean loss 3.91668, mean acc 0.98601
+[15:34:17.18] Training iter 3050, mean loss 4.80738 (batch loss 6.13236), mean acc 0.98500
+[15:34:59.51] Training iter 3100, mean loss 4.51791 (batch loss 6.36645), mean acc 0.98573
+[15:35:42.10] Training iter 3150, mean loss 4.54174 (batch loss 4.06880), mean acc 0.98556
+[15:36:24.38] Training iter 3200, mean loss 4.32558 (batch loss 1.96299), mean acc 0.98677
+[15:37:07.14] Training iter 3250, mean loss 4.15772 (batch loss 1.58441), mean acc 0.98738
+[15:37:49.34] Training iter 3300, mean loss 4.12671 (batch loss 1.07904), mean acc 0.98736
+[15:38:31.86] Training iter 3350, mean loss 4.06121 (batch loss 3.77312), mean acc 0.98738
+[15:39:14.63] Training iter 3400, mean loss 4.02760 (batch loss 4.77612), mean acc 0.98732
+[15:39:56.96] Training iter 3450, mean loss 4.05507 (batch loss 4.11819), mean acc 0.98718
+[15:40:39.46] Training iter 3500, mean loss 3.98829 (batch loss 2.61758), mean acc 0.98721
+[15:40:39.46]     Testing...
+[15:41:40.43]     Testing iter 3500, mean loss 4.54280, mean acc 0.98492
+[15:42:22.86] Training iter 3550, mean loss 3.68794 (batch loss 8.62749), mean acc 0.98771
+[15:43:05.48] Training iter 3600, mean loss 3.96530 (batch loss 0.81753), mean acc 0.98667
+[15:43:50.41] Training iter 3650, mean loss 3.99695 (batch loss 0.43111), mean acc 0.98639
+[15:44:33.68] Training iter 3700, mean loss 3.80709 (batch loss 6.57410), mean acc 0.98724
+[15:45:16.75] Training iter 3750, mean loss 3.85657 (batch loss 0.34824), mean acc 0.98729
+[15:45:59.52] Training iter 3800, mean loss 3.73258 (batch loss 2.62546), mean acc 0.98767
+[15:46:42.81] Training iter 3850, mean loss 3.66397 (batch loss 3.17235), mean acc 0.98801
+[15:47:25.65] Training iter 3900, mean loss 3.57999 (batch loss 0.36436), mean acc 0.98820
+[15:48:07.96] Training iter 3950, mean loss 3.59700 (batch loss 1.88927), mean acc 0.98829
+[15:48:50.14] Training iter 4000, mean loss 3.57537 (batch loss 1.99804), mean acc 0.98842
+[15:48:50.14]     Testing...
+[15:49:49.76]     Testing iter 4000, mean loss 3.81096, mean acc 0.98750
+[15:50:31.56] Training iter 4050, mean loss 2.77490 (batch loss 3.84424), mean acc 0.99208
+[15:51:13.07] Training iter 4100, mean loss 2.91774 (batch loss 1.32646), mean acc 0.99083
+[15:51:54.88] Training iter 4150, mean loss 2.90364 (batch loss 11.56974), mean acc 0.99153
+[15:52:36.56] Training iter 4200, mean loss 3.10178 (batch loss 2.62469), mean acc 0.99068
+[15:53:18.25] Training iter 4250, mean loss 3.13779 (batch loss 8.07775), mean acc 0.99021
+[15:53:59.95] Training iter 4300, mean loss 3.32871 (batch loss 18.30485), mean acc 0.98944
+[15:54:41.72] Training iter 4350, mean loss 3.27011 (batch loss 0.23800), mean acc 0.98946
+[15:55:23.09] Training iter 4400, mean loss 3.48023 (batch loss 10.92706), mean acc 0.98883
+[15:56:05.09] Training iter 4450, mean loss 3.44795 (batch loss 1.96053), mean acc 0.98870
+[15:56:46.82] Training iter 4500, mean loss 3.37505 (batch loss 0.21874), mean acc 0.98892
+[15:56:46.82]     Testing...
+[15:57:47.03]     Testing iter 4500, mean loss 3.57762, mean acc 0.98958
+[15:58:29.28] Training iter 4550, mean loss 2.92973 (batch loss 2.64764), mean acc 0.99062
+[15:59:11.91] Training iter 4600, mean loss 2.74808 (batch loss 1.71053), mean acc 0.99073
+[15:59:54.12] Training iter 4650, mean loss 2.79772 (batch loss 2.06669), mean acc 0.99069
+[16:00:35.75] Training iter 4700, mean loss 3.13031 (batch loss 4.49190), mean acc 0.99031
+[16:01:17.13] Training iter 4750, mean loss 3.22257 (batch loss 0.28139), mean acc 0.99021
+[16:01:58.98] Training iter 4800, mean loss 3.10623 (batch loss 1.98619), mean acc 0.99062
+[16:02:41.19] Training iter 4850, mean loss 3.17998 (batch loss 2.76185), mean acc 0.99042
+[16:03:23.30] Training iter 4900, mean loss 3.23588 (batch loss 6.69361), mean acc 0.98992
+[16:04:05.63] Training iter 4950, mean loss 3.20889 (batch loss 1.23135), mean acc 0.98991
+[16:04:47.10] Training iter 5000, mean loss 3.15196 (batch loss 0.37884), mean acc 0.99008
+[16:04:47.10]     Testing...
+[16:05:47.06]     Testing iter 5000, mean loss 3.24457, mean acc 0.98968
+[16:06:28.85] Training iter 5050, mean loss 2.44290 (batch loss 1.50655), mean acc 0.99208
+[16:07:10.39] Training iter 5100, mean loss 2.64539 (batch loss 9.75212), mean acc 0.99187
+[16:07:51.83] Training iter 5150, mean loss 2.65152 (batch loss 2.04724), mean acc 0.99111
+[16:08:33.12] Training iter 5200, mean loss 2.61478 (batch loss 2.68592), mean acc 0.99120
+[16:09:14.28] Training iter 5250, mean loss 2.93219 (batch loss 7.59381), mean acc 0.98992
+[16:09:55.86] Training iter 5300, mean loss 2.83779 (batch loss 2.36434), mean acc 0.99010
+[16:10:37.53] Training iter 5350, mean loss 2.88650 (batch loss 1.57180), mean acc 0.99000
+[16:11:20.47] Training iter 5400, mean loss 2.86341 (batch loss 7.73195), mean acc 0.99036
+[16:12:03.33] Training iter 5450, mean loss 2.80832 (batch loss 0.29117), mean acc 0.99067
+[16:12:45.87] Training iter 5500, mean loss 2.82004 (batch loss 5.00177), mean acc 0.99054
+[16:12:45.87]     Testing...
+[16:13:51.64]     Testing iter 5500, mean loss 3.28225, mean acc 0.98879
+[16:14:40.62] Training iter 5550, mean loss 3.31055 (batch loss 7.18062), mean acc 0.98979
+[16:15:23.80] Training iter 5600, mean loss 2.92108 (batch loss 0.21919), mean acc 0.99083
+[16:16:05.31] Training iter 5650, mean loss 3.03797 (batch loss 0.29386), mean acc 0.99132
+[16:16:46.57] Training iter 5700, mean loss 2.88169 (batch loss 0.86047), mean acc 0.99146
+[16:17:27.85] Training iter 5750, mean loss 2.93689 (batch loss 1.44214), mean acc 0.99096
+[16:18:08.74] Training iter 5800, mean loss 2.84039 (batch loss 7.22968), mean acc 0.99135
+[16:18:49.79] Training iter 5850, mean loss 2.73515 (batch loss 0.64570), mean acc 0.99155
+[16:19:31.10] Training iter 5900, mean loss 2.73923 (batch loss 4.86051), mean acc 0.99135
+[16:20:13.10] Training iter 5950, mean loss 2.74833 (batch loss 3.20279), mean acc 0.99127
+[16:20:54.35] Training iter 6000, mean loss 2.83546 (batch loss 3.66476), mean acc 0.99106
+[16:20:54.35]     Testing...
+[16:21:54.22]     Testing iter 6000, mean loss 3.16816, mean acc 0.98919
+[16:22:36.27] Training iter 6050, mean loss 2.31146 (batch loss 3.59177), mean acc 0.99312
+[16:23:17.59] Training iter 6100, mean loss 2.38106 (batch loss 0.16677), mean acc 0.99208
+[16:23:58.85] Training iter 6150, mean loss 2.33342 (batch loss 6.38631), mean acc 0.99201
+[16:24:40.30] Training iter 6200, mean loss 2.48710 (batch loss 0.52360), mean acc 0.99182
+[16:25:22.06] Training iter 6250, mean loss 2.42964 (batch loss 0.59983), mean acc 0.99175
+[16:26:03.63] Training iter 6300, mean loss 2.48114 (batch loss 0.46626), mean acc 0.99163
+[16:26:44.97] Training iter 6350, mean loss 2.45817 (batch loss 25.97753), mean acc 0.99176
+[16:27:26.10] Training iter 6400, mean loss 2.40103 (batch loss 2.06378), mean acc 0.99190
+[16:28:07.34] Training iter 6450, mean loss 2.34938 (batch loss 3.24953), mean acc 0.99211
+[16:28:48.82] Training iter 6500, mean loss 2.30426 (batch loss 0.23250), mean acc 0.99229
+[16:28:48.82]     Testing...
+[16:29:48.32]     Testing iter 6500, mean loss 3.29803, mean acc 0.98929
+[16:30:29.38] Training iter 6550, mean loss 2.61032 (batch loss 5.04117), mean acc 0.99229
+[16:31:10.34] Training iter 6600, mean loss 2.64741 (batch loss 1.80703), mean acc 0.99115
+[16:31:51.40] Training iter 6650, mean loss 2.73728 (batch loss 8.15000), mean acc 0.99146
+[16:32:32.90] Training iter 6700, mean loss 2.84119 (batch loss 0.05205), mean acc 0.99115
+[16:33:14.06] Training iter 6750, mean loss 2.68102 (batch loss 0.11879), mean acc 0.99146
+[16:33:55.86] Training iter 6800, mean loss 2.67129 (batch loss 0.42016), mean acc 0.99139
+[16:34:37.13] Training iter 6850, mean loss 2.56869 (batch loss 0.86758), mean acc 0.99176
+[16:35:18.22] Training iter 6900, mean loss 2.45614 (batch loss 0.63966), mean acc 0.99211
+[16:35:59.28] Training iter 6950, mean loss 2.41470 (batch loss 3.24156), mean acc 0.99225
+[16:36:40.53] Training iter 7000, mean loss 2.34654 (batch loss 3.42198), mean acc 0.99242
+[16:36:40.53]     Testing...
+[16:37:39.72]     Testing iter 7000, mean loss 3.14735, mean acc 0.98958
+[16:38:20.87] Training iter 7050, mean loss 1.73147 (batch loss 0.51998), mean acc 0.99333
+[16:39:02.37] Training iter 7100, mean loss 2.26813 (batch loss 13.30611), mean acc 0.99250
+[16:39:43.44] Training iter 7150, mean loss 2.54642 (batch loss 0.72142), mean acc 0.99132
+[16:40:24.72] Training iter 7200, mean loss 2.75296 (batch loss 0.76732), mean acc 0.99109
+[16:41:05.60] Training iter 7250, mean loss 2.59946 (batch loss 0.12044), mean acc 0.99125
+[16:41:46.54] Training iter 7300, mean loss 2.54503 (batch loss 0.31013), mean acc 0.99167
+[16:42:27.68] Training iter 7350, mean loss 2.49121 (batch loss 1.86103), mean acc 0.99170
+[16:43:09.70] Training iter 7400, mean loss 2.48740 (batch loss 0.55718), mean acc 0.99161
+[16:43:51.94] Training iter 7450, mean loss 2.44767 (batch loss 0.41274), mean acc 0.99176
+[16:44:33.43] Training iter 7500, mean loss 2.44092 (batch loss 1.46177), mean acc 0.99175
+[16:44:33.43]     Testing...
+[16:45:33.39]     Testing iter 7500, mean loss 3.72212, mean acc 0.98750
+[16:46:14.72] Training iter 7550, mean loss 1.52735 (batch loss 0.97806), mean acc 0.99396
+[16:46:56.29] Training iter 7600, mean loss 1.87539 (batch loss 7.70433), mean acc 0.99365
+[16:47:37.68] Training iter 7650, mean loss 1.87063 (batch loss 22.24695), mean acc 0.99403
+[16:48:18.95] Training iter 7700, mean loss 1.88674 (batch loss 1.93187), mean acc 0.99417
+[16:49:00.38] Training iter 7750, mean loss 1.91954 (batch loss 0.20012), mean acc 0.99388
+[16:49:41.63] Training iter 7800, mean loss 1.91637 (batch loss 0.43259), mean acc 0.99378
+[16:50:22.50] Training iter 7850, mean loss 1.92792 (batch loss 0.30391), mean acc 0.99360
+[16:51:03.31] Training iter 7900, mean loss 2.01504 (batch loss 0.15886), mean acc 0.99333
+[16:51:44.73] Training iter 7950, mean loss 2.03517 (batch loss 7.94694), mean acc 0.99312
+[16:52:26.03] Training iter 8000, mean loss 2.05048 (batch loss 0.39783), mean acc 0.99315
+[16:52:26.03]     Testing...
+[16:53:25.69]     Testing iter 8000, mean loss 3.19695, mean acc 0.98968
+[16:54:06.86] Training iter 8050, mean loss 2.67463 (batch loss 3.54101), mean acc 0.99167
+[16:54:48.36] Training iter 8100, mean loss 2.35849 (batch loss 1.80679), mean acc 0.99240
+[16:55:30.13] Training iter 8150, mean loss 2.05620 (batch loss 0.58616), mean acc 0.99347
+[16:56:11.44] Training iter 8200, mean loss 1.92222 (batch loss 0.38563), mean acc 0.99417
+[16:56:53.00] Training iter 8250, mean loss 1.98658 (batch loss 1.32593), mean acc 0.99367
+[16:57:34.38] Training iter 8300, mean loss 1.98793 (batch loss 1.44375), mean acc 0.99396
+[16:58:15.90] Training iter 8350, mean loss 2.00384 (batch loss 0.40738), mean acc 0.99387
+[16:58:56.90] Training iter 8400, mean loss 1.99817 (batch loss 0.37198), mean acc 0.99372
+[16:59:38.30] Training iter 8450, mean loss 1.91518 (batch loss 1.91884), mean acc 0.99387
+[17:00:19.36] Training iter 8500, mean loss 1.94445 (batch loss 0.14890), mean acc 0.99392
+[17:00:19.36]     Testing...
+[17:01:18.89]     Testing iter 8500, mean loss 3.06713, mean acc 0.99058
+[17:01:59.86] Training iter 8550, mean loss 1.73018 (batch loss 1.33605), mean acc 0.99313
+[17:02:40.88] Training iter 8600, mean loss 1.97950 (batch loss 4.22243), mean acc 0.99250
+[17:03:21.95] Training iter 8650, mean loss 1.87584 (batch loss 2.46918), mean acc 0.99299
+[17:04:02.69] Training iter 8700, mean loss 1.90067 (batch loss 4.07736), mean acc 0.99286
+[17:04:43.32] Training iter 8750, mean loss 1.83670 (batch loss 0.33580), mean acc 0.99325
+[17:05:24.10] Training iter 8800, mean loss 1.79218 (batch loss 0.14938), mean acc 0.99354
+[17:06:05.51] Training iter 8850, mean loss 1.72761 (batch loss 1.83144), mean acc 0.99384
+[17:06:46.72] Training iter 8900, mean loss 1.76277 (batch loss 0.08874), mean acc 0.99372
+[17:07:27.48] Training iter 8950, mean loss 1.75947 (batch loss 0.68751), mean acc 0.99359
+[17:08:08.37] Training iter 9000, mean loss 1.75537 (batch loss 0.39038), mean acc 0.99373
+[17:08:08.37]     Testing...
+[17:09:08.03]     Testing iter 9000, mean loss 3.42402, mean acc 0.98958
+[17:09:49.00] Training iter 9050, mean loss 1.63293 (batch loss 2.46702), mean acc 0.99396
+[17:10:30.33] Training iter 9100, mean loss 1.74979 (batch loss 0.80307), mean acc 0.99375
+[17:11:11.68] Training iter 9150, mean loss 1.74112 (batch loss 0.02435), mean acc 0.99347
+[17:11:52.82] Training iter 9200, mean loss 1.73457 (batch loss 1.08006), mean acc 0.99380
+[17:12:33.51] Training iter 9250, mean loss 1.86614 (batch loss 2.47474), mean acc 0.99358
+[17:13:13.97] Training iter 9300, mean loss 2.00489 (batch loss 3.95202), mean acc 0.99330
+[17:13:55.75] Training iter 9350, mean loss 1.97481 (batch loss 2.29261), mean acc 0.99333
+[17:14:36.62] Training iter 9400, mean loss 1.92574 (batch loss 1.25373), mean acc 0.99357
+[17:15:18.00] Training iter 9450, mean loss 1.87004 (batch loss 0.05063), mean acc 0.99366
+[17:15:59.05] Training iter 9500, mean loss 1.83334 (batch loss 1.52433), mean acc 0.99377
+[17:15:59.05]     Testing...
+[17:16:58.49]     Testing iter 9500, mean loss 2.92296, mean acc 0.99018
+[17:17:39.50] Training iter 9550, mean loss 1.36236 (batch loss 0.03085), mean acc 0.99604
+[17:18:20.52] Training iter 9600, mean loss 1.25129 (batch loss 2.83674), mean acc 0.99646
+[17:19:01.37] Training iter 9650, mean loss 1.34988 (batch loss 1.27987), mean acc 0.99583
+[17:19:42.35] Training iter 9700, mean loss 1.38946 (batch loss 3.52610), mean acc 0.99568
+[17:20:23.12] Training iter 9750, mean loss 1.51986 (batch loss 0.92103), mean acc 0.99521
+[17:21:03.95] Training iter 9800, mean loss 1.61993 (batch loss 1.02981), mean acc 0.99483
+[17:21:44.47] Training iter 9850, mean loss 1.61356 (batch loss 11.13382), mean acc 0.99473
+[17:22:25.02] Training iter 9900, mean loss 1.64740 (batch loss 0.19379), mean acc 0.99464
+[17:23:06.59] Training iter 9950, mean loss 1.75530 (batch loss 0.96754), mean acc 0.99431
+[17:23:49.13] Training iter 10000, mean loss 1.81403 (batch loss 0.70945), mean acc 0.99421
+[17:23:49.13]     Testing...
+[17:24:48.47]     Testing iter 10000, mean loss 3.23892, mean acc 0.99008
+[Finished in 9739.064s]
