@@ -3,17 +3,11 @@ clear
 model = Network();
 model.add(Convolution('conv1', 7, 1, 9, 3, 0.01));
 model.add(Relu('relu1'));
-model.add(Pooling('pool1', 2, 0));  % output shape: 14 x 14 x  x N
-model.add(Convolution('conv2', 7, 7, 7, 3, 0.01));
-model.add(Convolution('conv1', 5, 1, 4, 2, 0.01));
-model.add(Relu('relu1'));
-model.add(Pooling('pool1', 2, 0));  % output shape: 14 x 14 x 4 x N
-model.add(Convolution('conv2', 5, 4, 4, 2, 0.01));
+model.add(Pooling('pool1', 2, 0));  % output shape: 14 x 14 x 9 x N
+model.add(Convolution('conv2', 7, 9, 9, 3, 0.01));
 model.add(Relu('relu2'));
-model.add(Pooling('pool2', 2, 0)); % output shape: 7 x 7 x 7 x N
-model.add(Linear('linear1',343,10,0.01));
-% model.add(Relu('relu3'));
-% model.add(Linear('linear1',100,10,0.01));
+model.add(Pooling('pool2', 2, 0)); % output shape: 7 x 7 x 9 x N
+model.add(Linear('linear1',441,10,0.01));
 loss = SoftmaxLoss('loss');
 
 % load data
@@ -28,8 +22,6 @@ test_label = mnist.test_label;
 
 update.learning_rate = 0.0005;
 update.weight_decay = 0.001;
-update.learning_rate = 0.1;
-update.weight_decay = 0;
 update.momentum = 0.9;
 
 solver.update = update;
