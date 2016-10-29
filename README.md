@@ -1,7 +1,7 @@
 # MNIST Digits Classififcation with CNN
 ### 模型基本参数
 本次作业，采用CNN进行MNIST手写数字的识别，采用了两层“Convolution-Pooling-Rule”的神经网络，最后再加上一层Linear层的模型，具体参数为：
-* 卷积核维度：9×9
+* 卷积核维度：7×7
 * 第一层卷积核个数：9
 * 第二层卷积核个数：9
 * learning_rate：0.0005
