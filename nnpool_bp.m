@@ -10,8 +10,5 @@ function down_delta = nnpool_bp(input, delta, kernel_size, pad)
         down_delta(:,:,i,j) = kron(delta(:,:,i,j)/(kernel_size*kernel_size),ones(kernel_size,kernel_size));
       end
     end
-    
+
 end
-
-
-% kron(ones(7,7)/4,ones(2,2));
